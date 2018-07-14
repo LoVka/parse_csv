@@ -1,0 +1,19 @@
+<div class="page">
+  <% flash.each do |message_type, message| %>
+    <div class="alert alert-<%= message_type %>">
+      <%= message %>
+    </div>
+  <% end %>
+  <%= simple_form_for(:upload,
+                      url: uploads_import_path,
+                      method: 'post') do |f| %>
+    <%= f.label 'Please upload zip file' %>
+    <%= f.file_field :file, required: true %>
+
+    <%= f.submit 'Submit' %>
+  <% end %>
+
+  <%= link_to 'Suppliers', suppliers_path %>
+
+  <%= link_to 'Skus', skus_path %>
+</div>

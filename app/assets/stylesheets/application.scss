@@ -1,0 +1,23 @@
+@import "bootstrap";
+
+.alert-notice{
+    color: green;
+}
+
+label {
+  display: block;
+}
+
+.page {
+  margin: 20px;
+}
+
+a {
+  background-color: lightgreen;
+  color: black;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 4px 0 4px;
+}

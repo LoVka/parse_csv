@@ -1,0 +1,24 @@
+<div class="page">
+  <div>
+    <%= link_to 'Return to upload page', uploads_path %>
+  </div>
+
+  <table class="table table-striped">
+    <thead>
+    <th>Code</th>
+    <th>Name</th>
+    </thead>
+    <tbody>
+    <% @suppliers.each do |supplier| %>
+      <tr>
+        <td>
+          <%= supplier.code %>
+        </td>
+        <td>
+          <%= supplier.name %>
+        </td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

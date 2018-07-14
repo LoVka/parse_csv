@@ -1,0 +1,52 @@
+<div class="page">
+  <div >
+    <%= link_to 'Return to upload page', uploads_path %>
+  </div>
+
+  <table class="table table-striped">
+    <thead>
+    <th>Code</th>
+    <th>Code of suppliers</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Extra attribute</th>
+    <th>Extra attributes</th>
+    <th>Extra attribute</th>
+    <th>Extra attribute</th>
+    <th>Extra attribute</th>
+    </thead>
+    <tbody>
+    <% @skus.each do |sku| %>
+      <tr>
+        <td>
+          <%= sku.sku_code %>
+        </td>
+        <td>
+          <%= sku.supplier_id %>
+        </td>
+        <td>
+          <%= sku.name %>
+        </td>
+        <td>
+          <%= sku.price %>
+        </td>
+        <td>
+          <%= sku.extra_attribute %>
+        </td>
+        <td>
+          <%= sku.extra_attribute_2 %>
+        </td>
+        <td>
+          <%= sku.extra_attribute_3 %>
+        </td>
+        <td>
+          <%= sku.extra_attribute_4 %>
+        </td>
+        <td>
+          <%= sku.extra_attribute_5 %>
+        </td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
